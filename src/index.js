@@ -1,25 +1,25 @@
 
 exports.min = function min (array) {
-  /* let minimum = array[0];
-  let i = 0;
-  while (i < array.length) {
-    if (array[i] < array[i + 1]) {
-      i += 1;
-    } else {
-      minimum = array[i + 1];
-      i += 1;
-    }
-  }
-  
-  return minimum; */
-  let minimum = Array.min(array);
-  return minimum;
-}
+  if (array === [] || array === '') {
+    return 0;
+  }  
+  return Math.min(...array);
+};
 
 exports.max = function max (array) {
-  return 0;
-}
+  if (array === []) {
+    return 0;
+  }
+  return Math.max(...array);
+};
 
 exports.avg = function avg (array) {
-  return 0;
+  if (array === []) {
+    return 0;
+  }
+  let result = 0;
+  for (i = 0; i < array.length; i++) {
+    result = result + array[i];
+  }
+  return result / array.length;
 }
