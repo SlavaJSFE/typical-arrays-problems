@@ -1,6 +1,6 @@
 
 exports.min = function min (array) {
-  let minimum = array[0];
+  /* let minimum = array[0];
   let i = 0;
   while (i < array.length) {
     if (array[i] < array[i + 1]) {
@@ -11,9 +11,9 @@ exports.min = function min (array) {
     }
   }
   
+  return minimum; */
+  let minimum = Array.min(array);
   return minimum;
-  /*let minimum = Array.min(array);
-  return minimum;*/
 }
 
 exports.max = function max (array) {
